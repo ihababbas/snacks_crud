@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<h3> Name : {{snack.name}}</h3>
+<h3> Rank : {{snack.purchaser}}</h3>
+
+<p> description : {{snack.desc}}</p>
+
+<button  class="_button"><a href="{% url 'thing_list' %}">back</a></button>
+{% endblock content%}

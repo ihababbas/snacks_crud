@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content%}
+<h1> All Snack </h1>
+{% for snack in allThings %}
+
+<h3> {{snack.name}}</h3>
+<button><a href="{% url 'thing_detail' snack.pk %}">more details </a></button>
+<button><a href="{% url 'thing_update' snack.pk %}">Update</a></button>
+{% endfor %}
+{% endblock content%}
