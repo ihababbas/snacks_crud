@@ -6,5 +6,10 @@
 <h3> {{snack.name}}</h3>
 <button><a href="{% url 'thing_detail' snack.pk %}">more details </a></button>
 <button><a href="{% url 'thing_update' snack.pk %}">Update</a></button>
+<button><a href="{% url 'thing_delete' snack.id%}" id="delete_list">Delete</a></button>
 {% endfor %}
+<br>
+<p>
+<button><a href="{% url 'thing_create'%}">Create</a></button>
+</p>
 {% endblock content%}
